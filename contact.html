@@ -3,7 +3,6 @@
     <head>
         <title>Assignment 1</title>
         <meta name = "viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="refresh" content=30 />
         <meta name="author" content="Huseyin" />
         <meta name="keywords" content="assignment, portfolio, web, page, contact" />
         <meta name="description" content="Contact page to the assignment" />
@@ -13,12 +12,12 @@
     </head>
     <body>
         <nav class="navigation_bar">
-            <ul>
+            <ul class="nav-menu">
                 <li><a class="nav-a-links" href="/index.html">Home</a></li>
                 <li><a class="nav-a-links" href="/about.html">About</a></li>
                 <li><a class="nav-a-links" href="/gallery.html">Gallery</a></li>
                 <li><a class="nav-a-links" href="/cv.html">CV - Resume</a></li>
-                <li><a class="nav-a-links" href="/contact.html">Contact</a></li>
+                <li><a class="nav-a-links active" href="/contact.html">Contact</a></li>
             </ul>
         </nav>
         <h1>Contact Me</h1>
@@ -30,13 +29,13 @@
         <!-- Form here -->
         <form action="mailto:hsynrsdd@gmail.com" method="post" enctype="text/plain">
             <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name" required><br>
+            <input type="text" id="name" name="name" required placeholder="e.g. John Doe"><br>
             <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email" required><br>
+            <input type="email" id="email" name="email" required placeholder="e.g. example@gmail.com"><br>
             <label for="message">Message:</label><br>
-            <textarea id="message" name="message" rows="4" cols="50" required></textarea>
+            <textarea id="message" name="message" rows="4" cols="50" required placeholder="e.g. I would like to discuss the project..."></textarea>
             <br>
-            <!-- Buttons design taken from: https://uiverse.io/sekaiking/tidy-starfish-71 -->
+            <!-- Buttons design taken from: https://uiverse.io/sekaiking/tidy-starfish-71 without the hover and active cause I didn't want to complicate things-->
             <button type="submit">Send</button>
             <button type="reset">Reset</button>
         </form>

@@ -1,35 +1,46 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Assignment 1</title>
-        <meta name = "viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="refresh" content=30 />
-        <meta name="author" content="Huseyin" />
-        <meta name="keywords" content="assignment, portfolio, web, page, index" />
-        <meta name="description" content="Assignment to do a portfolio" />
-        <meta charset="UTF-8" />
-        <link rel="stylesheet" href="/css/style.css">
-        <link rel="icon" href="/images/favicon.ico" type="image/x-icon"> <!-- insert peak lava bucket -->
-    </head>
-    <body>  
-        <nav class="navigation_bar" id = "nav-bar">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Huseyin">
+    <meta name="keywords" content="assignment, portfolio, web, page, index">
+    <meta name="description" content="Assignment to do a portfolio">
+    <title>Assignment 1 | Huseyin's Portfolio</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav class="navigation_bar" id="nav-bar">
             <ul>
-                <li><a class="nav-a-links" href="/index.html">Home</a></li>
+                <li><a class="nav-a-links active" href="/index.html">Home</a></li>
                 <li><a class="nav-a-links" href="/about.html">About</a></li>
                 <li><a class="nav-a-links" href="/gallery.html">Gallery</a></li>
                 <li><a class="nav-a-links" href="/cv.html">CV - Resume</a></li>
                 <li><a class="nav-a-links" href="/contact.html">Contact</a></li>
             </ul>
         </nav>
-        <main>
-            <h1>Welcome to my portfolio</h1>
-            <p>This is my portfolio page for the first assignment of <b>Web Studies 1</b> course.</p>
+    </header>
+
+    <main>
+        <section aria-labelledby="intro">
+            <h1 id="intro">Welcome to my portfolio</h1>
+            <p>This is my portfolio page for the first assignment of <strong>Web Studies 1</strong> course.</p>
             <p>Use the navigation bar to visit other pages.</p>
+        </section>
+
+        <section aria-labelledby="cat-image">
+            <h2 id="cat-image">Cat Picture</h2>
             <p>Here's a picture of a cat:</p>
-            <img src="/images/cat1.jpg" alt="A cat" class="cat-in-the-index">
-        </main>
-        <footer>
-        <p><b>Copyright</b> &copy; 2025 <b>Huseyin</b></p>
-        </footer>
-    </body>
+            <figure>
+                <img src="/images/cat1.jpg" alt="A cute cat" class="cat-in-the-index">
+            </figure>
+        </section>
+    </main>
+
+    <footer>
+        <p><strong>Copyright</strong> &copy; 2025 <strong>Huseyin</strong></p>
+    </footer>
+</body>
 </html>
