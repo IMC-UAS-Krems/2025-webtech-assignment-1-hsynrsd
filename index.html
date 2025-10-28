@@ -1,46 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Huseyin">
-    <meta name="keywords" content="assignment, portfolio, web, page, index">
-    <meta name="description" content="Assignment to do a portfolio">
-    <title>Assignment 1 | Huseyin's Portfolio</title>
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
-</head>
-<body>
-    <header>
-        <nav class="navigation_bar" id="nav-bar">
-            <ul>
-                <li><a class="nav-a-links active" href="/index.html">Home</a></li>
-                <li><a class="nav-a-links" href="/about.html">About</a></li>
-                <li><a class="nav-a-links" href="/gallery.html">Gallery</a></li>
-                <li><a class="nav-a-links" href="/cv.html">CV - Resume</a></li>
-                <li><a class="nav-a-links" href="/contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Huseyin">
+        <meta name="keywords" content="assignment, portfolio, web, page, index">
+        <meta name="description" content="Assignment to do a portfolio">
+        <title>Huseyin's Portfolio | Assignment 1</title>
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+        <header>
+            <nav class="navigation_bar" id="nav-bar">
+                <ul>
+                    <li><a class="nav-a-links active" href="/index.html">Home</a></li>
+                    <li><a class="nav-a-links" href="/about.html">About</a></li>
+                    <li><a class="nav-a-links" href="/gallery.html">Gallery</a></li>
+                    <li><a class="nav-a-links" href="/cv.html">CV - Resume</a></li>
+                    <li><a class="nav-a-links" href="/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <main>
-        <section aria-labelledby="intro">
-            <h1 id="intro">Welcome to my portfolio</h1>
-            <p>This is my portfolio page for the first assignment of <strong>Web Studies 1</strong> course.</p>
-            <p>Use the navigation bar to visit other pages.</p>
-        </section>
+        <main>
+            <section class="hero" aria-labelledby="intro">
+                <h1 id="intro">Welcome to My Portfolio</h1>
+                <p class="hero-text">Hi, I'm Huseyin! I'm an Informatics student at IMC with a passion for web development.</p>
+                <div class="cta-links">
+                    <a href="/about.html" class="cta-button">Learn More About Me</a>
+                    <a href="/contact.html" class="cta-button">Get in Touch</a>
+                </div>
+            </section>
 
-        <section aria-labelledby="cat-image">
-            <h2 id="cat-image">Cat Picture</h2>
-            <p>Here's a picture of a cat:</p>
-            <figure>
-                <img src="/images/cat1.jpg" alt="A cute cat" class="cat-in-the-index">
-            </figure>
-        </section>
-    </main>
+            <section class="featured-sections" aria-labelledby="features">
+                <h2 id="features" class="visually-hidden">Featured Sections</h2>
+                <div class="features-grid">
+                    <article class="feature-card">
+                        <h3>My Journey</h3>
+                        <p>Exploring the world of web development at IMC's Web Studies course.</p>
+                        <a href="/about.html" class="feature-link">Read More</a>
+                    </article>
+                    <article class="feature-card">
+                        <h3>Gallery</h3>
+                        <p>Check out my collection of interesting images and projects.</p>
+                        <a href="/gallery.html" class="feature-link">View Gallery</a>
+                    </article>
+                    <article class="feature-card">
+                        <h3>Resume</h3>
+                        <p>View my qualifications and experience.</p>
+                        <a href="/cv.html" class="feature-link">See CV</a>
+                    </article>
+                </div>
+            </section>
 
-    <footer>
-        <p><strong>Copyright</strong> &copy; 2025 <strong>Huseyin</strong></p>
-    </footer>
-</body>
+            <section class="showcase" aria-labelledby="cat-image">
+                <h2 id="showcase-title">Featured Image</h2>
+                <figure class="showcase-figure">
+                    <img src="/images/cat1.jpg" alt="A cute cat" class="cat-in-the-index">
+                    <figcaption class="image-caption">A glimpse into my gallery collection</figcaption>
+                </figure>
+                <p class="disclaimer">
+                    All images are taken from Pinterest, I do not own or claim any rights to them.
+                </p>
+            </section>
+        </main>
+
+        <footer>
+            <p><strong>Copyright</strong> &copy; 2025 <strong>Huseyin</strong></p>
+        </footer>
+    </body>
 </html>
