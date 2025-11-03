@@ -49,10 +49,12 @@ body {
     color: white;
 }
 
-.nav-a-links.active {
+/* When the link in the navbar is clicked, show red */
+.nav-a-links.active { 
     background-color: red;
 }
 
+/* Hovered: red */
 .nav-a-links.active:hover {
     background-color: darkred;
 }
@@ -66,7 +68,7 @@ body {
     margin-bottom: 2rem;
 }
 
-.skills-list {
+.cv-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(1fr, 1fr));
     gap: 1rem;
@@ -75,7 +77,7 @@ body {
     margin: 1rem 0;
 }
 
-.skills-list li {
+.cv-list li {
     background: #f8f9fa;
     padding: 0.75rem 1rem;
     border-radius: 6px;
@@ -83,47 +85,8 @@ body {
     font-size: 1rem;
     transition: transform 0.2s;
 }
-.skills-list li:hover {
+.cv-list li:hover {
     transform: translateX(-3px);
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-.cv-viewer {
-    background: #fff;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-}
-
-.cv-toggle-btn {
-    display: inline-block;
-    background: blue;
-    color: white;
-    padding: 0.75rem 1.5rem;
-    border-radius: 25px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.cv-toggle-btn:hover {
-    background: darkblue;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-}
-
-#toggle-cv {
-    display: none;
-}
-
-.pdf-container {
-    display: none;
-    background: #f8f9fa;
-    padding: 1rem;
-    border-radius: 8px;
-    margin-top: 1rem;
-}
-
-#toggle-cv:checked + .pdf-container {
-    display: block;
 }
 
 @keyframes fadeIn {
@@ -243,6 +206,10 @@ button {
     cursor: pointer;    
     border: 1px solid black;
     box-shadow: 0 0 0 0 black;
+}
+
+button:hover {
+    box-shadow: 0 0 10px 0 black;
 }
 
 
